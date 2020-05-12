@@ -1,0 +1,57 @@
+@use 'header';
+@use 'showcase';
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+
+	.abs,
+	.abs2,
+	.abs3 {
+		display: none;
+	}
+}
+.ani {
+	transition: 0.8s ease-in-out;
+}
+
+.ani:hover {
+	transition: 0.8s ease-in-out;
+	transform: skewX(2deg);
+}
+@media screen and (min-width: 440px) {
+	.container {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 768px) {
+	.container {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 1028px) {
+	.container {
+		width: 80%;
+
+		.abs {
+			display: block;
+			position: absolute;
+			top: 180px;
+			right: 100px;
+		}
+		.abs2 {
+			display: block;
+			position: absolute;
+			top: 400px;
+			right: 0px;
+		}
+		.abs3 {
+			display: block;
+			position: absolute;
+			top: 900px;
+			left: 0px;
+			z-index: -10;
+			height: 70vh;
+		}
+	}
+}

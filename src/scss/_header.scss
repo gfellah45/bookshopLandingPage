@@ -1,0 +1,124 @@
+.nav-main {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.bars {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		width: 20px;
+		height: 30px;
+		cursor: pointer;
+		transform: rotate(360deg);
+		background: transparent;
+		transition: 0.7s ease-in-out;
+
+		.bar {
+			background: #000;
+			height: 3px;
+			width: 100%;
+			border-radius: 5px;
+			transition: 1s ease-in-out;
+		}
+	}
+	.change .bar1 {
+		transform: rotateZ(-45deg) translate(-8px, 6px);
+	}
+	.change .bar3 {
+		transform: rotateZ(45deg) translate(-8px, -6px);
+	}
+	.change .bar2 {
+		opacity: 0;
+	}
+	.navigator {
+		width: 90%;
+		height: 55vh;
+		position: fixed;
+		top: 40px;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		z-index: 10;
+		margin: 2rem auto;
+		border-radius: 10px;
+		transform: translateX(1000px);
+		transition: 0.7s ease-in-out;
+
+		li {
+			transition: 0.4s ease-in-out;
+		}
+
+		li:hover {
+			transform: scale(1.11);
+			transition: 0.5s ease-in-out;
+			opacity: 0.8;
+		}
+	}
+	.show {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.change {
+		transform: none;
+	}
+	@media screen and (min-width: 768px) {
+		.nav-main {
+			flex-wrap: nowrap;
+		}
+		.bars {
+			display: none;
+		}
+		.navigator {
+			position: static;
+			transform: none;
+			flex-direction: row;
+			width: 80%;
+			height: 0;
+
+			top: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			z-index: 10;
+			margin: 0 auto;
+			margin: 1.4rem 0;
+
+			transition: 0.7s ease-in-out;
+		}
+	}
+	@media screen and (min-width: 1025px) {
+		.nav-main {
+			flex-wrap: nowrap;
+		}
+		.bars {
+			display: none;
+		}
+		.navigator {
+			position: static;
+			transform: none;
+			flex-direction: row;
+			width: 70%;
+			height: 0;
+
+			top: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			z-index: 10;
+			margin: 0 auto;
+			margin: 1.4rem 0;
+
+			transition: 0.7s ease-in-out;
+		}
+	}
+}
