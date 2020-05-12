@@ -33,7 +33,7 @@
 	}
 	.navigator {
 		width: 90%;
-		height: 55vh;
+		height: 60vh;
 		position: fixed;
 		top: 40px;
 		left: 0;
@@ -44,6 +44,7 @@
 		flex-direction: column;
 		z-index: 10;
 		margin: 2rem auto;
+		padding: 1rem 0;
 		border-radius: 10px;
 		transform: translateX(1000px);
 		transition: 0.7s ease-in-out;
