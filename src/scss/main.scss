@@ -1,6 +1,9 @@
 @use 'header';
 @use 'showcase';
 
+html {
+	overflow-x: hidden;
+}
 .container {
 	width: 90%;
 	margin: 0 auto;

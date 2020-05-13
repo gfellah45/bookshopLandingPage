@@ -217,6 +217,10 @@
     margin: 0 auto;
   }
 }
+html {
+  overflow-x: hidden;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
